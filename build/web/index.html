@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -27,12 +28,45 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
-  <title>calculadora_imc</title>
+  <title>Calculadora IMC by Marvio Rocha</title>
   <link rel="manifest" href="manifest.json">
+  <style>
+    .container {
+      width: 100vw;
+      height: 70vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .indicator {
+      width: 50vw;
+    }
+  </style>
+
 </head>
-<body>
+
+<body style="overflow: hidden;">
+  <div id="loading_indicarot" class="container">
+    <img src="./assets/load.gif" width="150" height="150" alt="loading">
+  </div>
   <script src="flutter_bootstrap.js" async></script>
+
+  <script>
+    window.onload = function () {
+      setTimeout(() => {
+
+        var loading = document.getElementById('loading_indicador').style.display = 'none';
+        if (loading) {
+          loading.remove();
+        }
+
+      });
+    }
+  </script>
+
 </body>
+
 </html>
