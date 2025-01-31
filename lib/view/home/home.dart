@@ -269,7 +269,12 @@ class _HomeState extends State<Home> {
               color: Colors.white,
               child: const Center(
                 child: Text(
-                    'Copyright © 2025 by Make is ❤️ with Marvio Rocha - www.marviorocha.com'),
+                  'Copyright © 2025 by Make is ❤️ with Marvio Rocha - www.marviorocha.com',
+                  style: TextStyle(
+                      fontSize: 15,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.purple),
+                ),
               ),
             ),
           ],
